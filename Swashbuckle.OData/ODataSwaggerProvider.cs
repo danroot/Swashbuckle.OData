@@ -58,7 +58,8 @@ namespace Swashbuckle.OData
                 swashbuckleOptions.IgnoreObsoleteProperties,
                 swashbuckleOptions.SchemaIdSelector,
                 swashbuckleOptions.DescribeAllEnumsAsStrings,
-                swashbuckleOptions.DescribeStringEnumsInCamelCase);
+                swashbuckleOptions.DescribeStringEnumsInCamelCase,
+                swashbuckleOptions.ApplyFiltersToAllSchemas);
 
             Info info;
             _config.GetApiVersions().TryGetValue(apiVersion, out info);
